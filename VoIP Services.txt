@@ -20,7 +20,7 @@ conf t
    registrar server expires max 600 min 60
  voice register global
   mode cme
-  source-address 10.21.100.1 port 5060
+  source-address 10.21.100.8 port 5060
   max-dn 12
   max-pool 12
   authenticate register
@@ -34,13 +34,13 @@ conf t
    allow watch
    name 2124
   voice register pool 1
-    id mac #mym0bilemac#
+    id mac 2adc.eea0.120c
     number 1 dn 1
     dtmf-relay sip-notify
     username 2123 password 2123
     codec g711ulaw
   voice register pool 2
-    id mac #othm0bilemac#
+    id mac 2adc.eea0.120c
     number 1 dn 2
     dtmf-relay sip-notify
     username 2132 password 2132
@@ -89,3 +89,4 @@ application
   param number-of-hunt-grps 4
 
   end
+
