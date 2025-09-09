@@ -230,7 +230,7 @@ conf t
   destination-pattern 2103
   port 0/0/3
  end
-
+----------------------------------------------- x2 CUCM below
 conf t
  no telephony-service
  telephony-service
@@ -591,5 +591,6 @@ conf t
 conf t
  class-map voip
   match ip dscp  ?
+
 
 
